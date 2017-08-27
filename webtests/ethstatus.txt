@@ -1,0 +1,8 @@
+#!/bin/sh
+while :
+do
+
+cat /sys/class/net/eth0/operstate
+sleep 1
+
+done

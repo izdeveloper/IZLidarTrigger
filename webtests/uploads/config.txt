@@ -1,0 +1,10 @@
+dhcp=0
+timezone=15
+network_mask=255.255.255.0
+timezone_val=-5
+password=root
+ntp=0.0.0.0
+username=root
+static_ip=192.168.100.200
+gateway=192.168.100.1
+web_port=80

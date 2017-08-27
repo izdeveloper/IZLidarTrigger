@@ -1,0 +1,33 @@
+#!/bin/sh
+#/etc/init.d/lidar_start
+### BEGIN INIT INFO
+# Provides: lidar_start
+# Required-Start: 
+# Required-Stop: 
+# Should-Start: 
+# Should-Stop: 
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: Start and stop directadmin
+# Description: LidarStart:wq
+### END INIT INFO
+
+set -e
+
+echo "starting lidar"
+case "$1" in
+start)
+     dt=$(date)
+     echo "Starting Lidar: " $dt >> /var/lib/cloud9/trigger/lidar/lidar.log
+     /usr/bin/node /var/lib/cloud9/trigger/lidar/lidar_app.js >> /var/lib/cloud9/trigger/lidar/lidar.log 
+     echo  "Lidar started " >> /var/lib/cloud9/trigger/lidar/lidar.log
+     ;;
+stop)
+     dt=$(date)
+     echo "Stoping Lidar: " $dt >> /var/lib/cloud9/trigger/lidar/lidar.log    
+     ;;
+esac
+
+exit 0
+
+

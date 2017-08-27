@@ -1,0 +1,13 @@
+stop_trigger=1
+set_no_vehicle=133
+set_rear_vehicle_disabled=true
+set_front_vehicle=70
+set_rear_vehicle=70
+camera_ip=192.168.100.137
+ttl_trigger=1
+ttl_length=500
+camera_port=10305
+stop_time=2000
+set_no_vehicle_disabled=false
+set_front_vehicle_disabled=true
+camera_trigger=0

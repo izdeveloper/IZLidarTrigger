@@ -1,0 +1,1 @@
+module.exports = {"static_ip":"192.168.1.145","network_mask":"255.255.255.0","gateway":"192.168.1.1","ntp":"0.0.0.0","dhcp":"0","timezone":"15","timezone_val":"-5","web_port":"80","username":"root","password":"root"}

@@ -1,0 +1,8 @@
+#!/bin/sh
+while :
+do
+i2cset -y 1 0x62 0x00 0x04
+
+i2cget -y 1 0x62 0x90 c
+
+done
